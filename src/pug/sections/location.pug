@@ -1,0 +1,31 @@
+section.location
+  .location-left
+    .location__address
+      h3.location__address-title Our location
+      address.location__address-info.
+        174 Mimosa ST.NW #[br]
+        Casablanca MA 20370 #[br]
+        (212) 123 456 7 #[br]
+        Samir Timezguida
+      ul.social__list
+        li.social__item
+          a.social__link(href='#')
+            img(src="../img/tw.svg", alt="Twitter")
+        li.social__item
+          a.social__link(href='#')
+            img(src="../img/fb.svg", alt="Facebook")
+        li.social__item
+          a.social__link(href='#')
+            img(src="../img/in.svg", alt="In")
+        li.social__item
+          a.social__link(href='#')
+            img(src="../img/v.svg", alt="V")
+        li.social__item
+          a.social__link(href='#')
+            img(src="../img/be.svg", alt="Be")
+  .location-right
+    form.location__form(action="#" method='post')
+      input.location__form-input(type="text" placeholder='Name')
+      input.location__form-input(type="email" placeholder='Email')
+      textarea.location__form-textarea(placeholder='Message')
+      button.btn.btn--short.location--btn(type='submit') Send

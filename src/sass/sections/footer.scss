@@ -1,0 +1,32 @@
+.footer {
+  padding: 95px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222222;
+  color: #fff;
+
+  @media (max-width: 650px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+
+  &__log {
+    margin-bottom: 40px;
+
+    @media (max-width: 650px) {
+      width: 300px;
+    }
+
+    @media (max-width: 500px) {
+      width: 250px;
+    }
+  }
+
+  &__text {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

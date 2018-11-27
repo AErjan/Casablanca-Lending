@@ -1,0 +1,35 @@
+.help {
+  min-height: 500px;
+  background-color: #fff;
+  background-image: url('../img/help.jpg');
+  position: relative;
+
+  &__btn {
+    color: #fff;
+    border-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (max-width: 900px) {
+      width: 330px;
+      height: 80px;
+      line-height: 80px;
+      font-size: 20px;
+    }
+
+    @media (max-width: 450px) {
+      width: 250px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 18px;
+    }
+
+    &:focus,
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}

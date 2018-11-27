@@ -1,0 +1,169 @@
+.about {
+  padding: 120px 0 70px 0;
+  text-align: center;
+
+  @media (max-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__descriptions {
+    width: 770px;
+    font-size: 22px;
+    line-height: 36px;
+    margin: 0 auto 70px auto;
+
+    @media (max-width: 1200px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 900px) {
+      width: 550px;
+      font-size: 18px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @media (max-width: 580px) {
+      width: 400px;
+      font-size: 16px;
+      line-height: 27px;
+    }
+
+    @media (max-width: 420px) {
+      width: 290px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @media (max-width: 1200px) {
+      width: 600px;
+      margin: auto;
+      justify-content: space-around;
+    }
+
+    @media (max-width: 650px) {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    width: 270px;
+    height: 360px;
+    position: relative;
+
+    @media (max-width: 1200px) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 420px) {
+      width: 250px;
+      height: 330px;
+    }
+
+    &:hover {
+      .about {
+        &__picture {
+          opacity: 1;
+        }
+
+        &__item-overlay {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &--hiring {
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--title {
+    @media (max-width: 1200px) {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 35px;
+    }
+
+    @media (max-width: 800px) {
+      margin-bottom: 20px;
+
+      &::after {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &--btn {
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+
+  &__picture {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    transition: 0.5s;
+  }
+
+  &__item-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    border: 4px solid #000;
+    transition: 0.5s;
+  }
+
+  &__icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url('../img/team-icon.png');
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  &__name {
+    color: #fff;
+    font-family: $ff-header, sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+
+  &__profession {
+    font-size: 18px;
+    line-height: 36px;
+    color: #fff;
+    position: absolute;
+    letter-spacing: 1.5px;
+    bottom: 28px;
+    font-family: $ff-button, sans-serif;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,38 @@
+.quote {
+  min-height: 500px;
+  background-color: #000;
+  background-image: url('../img/get-quote.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  &__btn {
+    color: #fff;
+    border-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (max-width: 900px) {
+      width: 330px;
+      height: 80px;
+      line-height: 80px;
+      font-size: 20px;
+    }
+
+    @media (max-width: 500px) {
+      width: 230px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 18px;
+    }
+
+    &:focus,
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}

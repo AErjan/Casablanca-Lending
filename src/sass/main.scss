@@ -1,2 +1,21 @@
 @import 'global/vars';
+@import 'global/fonts';
 @import 'global/base';
+
+@import 'blocks/title';
+@import 'blocks/burger-menu';
+@import 'blocks/button';
+
+@import 'sections/header';
+@import 'sections/introduction';
+@import 'sections/creativity';
+@import 'sections/works';
+@import 'sections/help';
+@import 'sections/clients';
+@import 'sections/about';
+@import 'sections/video';
+@import 'sections/choose';
+@import 'sections/quote';
+@import 'sections/touch';
+@import 'sections/location';
+@import 'sections/footer';

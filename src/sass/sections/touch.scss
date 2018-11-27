@@ -1,0 +1,55 @@
+.touch {
+  padding: 120px 0 115px 0;
+
+  @media (max-width: 860px) {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+
+  &__descriptions {
+    width: 770px;
+    font-size: 22px;
+    line-height: 36px;
+    margin: 0 auto;
+    text-align: center;
+
+    @media (max-width: 1200px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 900px) {
+      width: 550px;
+      font-size: 18px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @media (max-width: 580px) {
+      width: 400px;
+      font-size: 16px;
+      line-height: 27px;
+    }
+
+    @media (max-width: 420px) {
+      width: 290px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  &--title {
+    @media (max-width: 1200px) {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 35px;
+    }
+
+    @media (max-width: 800px) {
+      margin-bottom: 20px;
+
+      &::after {
+        margin-top: 20px;
+      }
+    }
+  }
+}

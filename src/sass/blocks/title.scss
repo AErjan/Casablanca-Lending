@@ -1,0 +1,26 @@
+.title {
+  margin: 0 0 62px 0;
+  font-size: 30px;
+  line-height: 60px;
+  font-family: 'big_johnregular', sans-serif;
+  text-align: center;
+
+  @media (max-width: 900px) {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 86px;
+    background-color: #000;
+    margin: 53px auto 0 auto;
+  }
+}
